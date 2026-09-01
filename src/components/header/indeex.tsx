@@ -1,15 +1,16 @@
 import { useState } from "react";
-import { HeaderConteiner,Profile } from "./styles";
-
+import { HeaderConteiner,Profile,Logout } from "./styles";
+import {RiShutDownLine}from "react-icons/ri"
+import thema from "../../styles/thema";
 
 export default function Header(){
     const[user,setUser]=useState("vingren")
+     const[srcImag,setSrcImag]=useState("https://github.com/VingrenSousa.png")
     return(
         <HeaderConteiner>
             <Profile>
-
                 <img
-                    src="https://github.com/VingrenSousa.png"
+                    src={srcImag}
                     alt="foto do usuario"
                     />
                 <div>
@@ -17,6 +18,10 @@ export default function Header(){
                     <strong>{user}</strong>
                 </div>
             </Profile>
+
+            <Logout>
+                <RiShutDownLine color={thema.COLOR.GRAY_100}  size={36}/>
+            </Logout>
 
         </HeaderConteiner>
     )

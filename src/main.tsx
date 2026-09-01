@@ -5,13 +5,14 @@ import Details from './pages/details'
 import { ThemeProvider } from 'styled-components'
 import Thema from './styles/thema'
 import GlobalStyles from './styles/global'
+import Home from './pages/home'
 const root= document.getElementById('root')
 
 createRoot(root!).render(
   <StrictMode>
     <ThemeProvider  theme={Thema}>
       <GlobalStyles/>
-      <Details/>
+      <Home/>
     </ThemeProvider>
   </StrictMode>
 )
