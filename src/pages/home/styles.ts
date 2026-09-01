@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Conteiner=styled.div`
     width:100%;
     height: 100vh;
-
+   
     display: grid;
     grid-template-columns:250px auto;
     grid-template-rows:105px 128px auto 64px;
@@ -55,10 +55,29 @@ export const Menu=styled.ul`
 `
 export const Search=styled.div`
     grid-area:search;
+
+    padding:64px 64px 0;
 `
 export const Content=styled.div`
     grid-area:content;
+    padding: 0 64px;
+    overflow-y:auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+  
 `
 export const NewNote=styled.button`
     grid-area:newnote;
+
+    background-color:${({theme})=>theme.COLOR.ORANGE};
+    border:none;
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+    >svg{
+        margin-right:8px
+    }
 `
