@@ -7,7 +7,7 @@ export const Conteiner = styled.div`
     height: 100vh;
 
     display: grid;
-
+    
     grid-template-rows:105px auto;
     grid-template-areas:
     "header"
@@ -16,9 +16,28 @@ export const Conteiner = styled.div`
         grid-area:content;
         overflow-y:auto;
         padding:64px 0;
-        &::-webkit-scrollbar {
-        display: none;
+        /* Largura da barra */
+        ::-webkit-scrollbar {
+            width: 8px;
         }
+
+        /* Fundo da barra */
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        /* Parte que você arrasta */
+        ::-webkit-scrollbar-thumb {
+            background: ${({theme})=>theme.COLOR.ORANGE};
+            border-radius: 10px;
+        }
+
+        /* Quando passa o mouse */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #666;
+        }
+
+
     }
     
 
@@ -44,7 +63,7 @@ export const Content = styled.div`
     
     display:flex;
     flex-direction: column;
-
+   
     >button:first-child{
         align-self:flex-end;
     };

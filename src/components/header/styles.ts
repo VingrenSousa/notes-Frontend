@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
@@ -24,9 +25,11 @@ padding: 0 80px;
 
 `
 
-export const Profile = styled.div`
+export const Profile = styled(Link)`
     display:flex;
     align-items: center;
+
+    color:${({theme})=>theme.COLOR.WHITE};
 
    > img{
     width: 56px;

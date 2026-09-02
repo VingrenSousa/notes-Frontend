@@ -8,7 +8,7 @@ export default function Header(){
      const[srcImag,setSrcImag]=useState("https://github.com/VingrenSousa.png")
     return(
         <HeaderConteiner>
-            <Profile>
+            <Profile to="/profile">
                 <img
                     src={srcImag}
                     alt="foto do usuario"

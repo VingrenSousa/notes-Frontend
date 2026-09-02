@@ -42,8 +42,9 @@ export default function Details(){
               <Tags title="Node"/>
               <Tags title="Expres"/>
               
-            </Section>
-          <Button  title="Voltar"/>
+          </Section>
+            <Button  title="Voltar"/>
+        
         </Content>
       </main>
     </Conteiner>
