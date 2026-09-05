@@ -1,5 +1,5 @@
-import { createContext,use,useContext, useEffect, useState, type ReactNode } from "react";
-import imgpadrap from "../assets/default.jfif"
+import { createContext,useContext, useEffect, useState, type ReactNode } from "react";
+
 const AuthContext = createContext({} as AuthContextData);
 import { api } from "../service/api";
 import axios  from "axios";
