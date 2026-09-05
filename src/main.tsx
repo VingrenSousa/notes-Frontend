@@ -9,6 +9,8 @@ import GlobalStyles from './styles/global'
 
 
 import Routes from './router'
+import { AuthProvider } from './hooks/auth'
+
 
 
 
@@ -19,7 +21,9 @@ createRoot(root!).render(
   <StrictMode>
     <ThemeProvider  theme={Thema}>
       <GlobalStyles/>
-      <Routes/>
+      <AuthProvider>
+       <Routes/>
+      </AuthProvider>
     </ThemeProvider>
   </StrictMode>
 )

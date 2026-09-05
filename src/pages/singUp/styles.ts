@@ -46,3 +46,9 @@ flex:1;
 background: url(${({backgroundImg})=>backgroundImg}) no-repeat center center; // seto background image to not repeat and center it
 background-size:cover; 
 `
+export const Alert=styled.h3`
+    font-size: 14px;
+    color:red; 
+    font-style:normal;
+    font-weight:300
+`
